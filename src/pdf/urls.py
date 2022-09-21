@@ -26,6 +26,8 @@ urlpatterns = [
     path('grappelli/', include('grappelli.urls')),  # Admin grappelli URLS
     path('admin/', admin.site.urls),
     path('test-page/', views.current_datetime),
+    path('register/', views.register_user_init),
+    path('redirect/', views.register_user),
     url(r'^register/$', views.register_template, name='get_test'),
     path('generate/', views.generate_pdf2, name='get_pdf'),
     path('bulk/generate/', views.generate_bulk, name='get_status'),

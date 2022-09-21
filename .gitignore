@@ -160,3 +160,4 @@ drivefiles/
 
 # health check stats
 health_check*
+export.env
